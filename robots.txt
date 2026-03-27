@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://github.com/EvgKov126/bachelor-landing/sitemap.xml
