@@ -10,6 +10,15 @@
         <meta name="keywords"
             content="дистанційне навчання, LMS, особистий кабінет, бакалаврська робота, веб-система">
 
+        <meta property="og:type" content="website">
+        <meta property="og:url"
+            content="https://evgkov126.github.io/bachelor-landing/">
+        <meta property="og:title"
+            content="Бакалаврська робота">
+        <meta property="og:description"
+            content="Веборієнтована інформаційна система дистанційного навчання з інтеграцією особистого кабінету">
+        <meta property="og:image" content="assets/apple-touch-icon.png">
+
         <link rel="icon" type="image/png" href="assets/favicon.png">
 
         <link rel="icon" type="image/png" sizes="32x32"
@@ -24,19 +33,60 @@
             href="assets/android-chrome-192x192.png">
 
         <link rel="stylesheet" href="style.css">
+
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Система дистанційного навчання",
+      "description": "Лендінг бакалаврської роботи про веборієнтовану інформаційну систему",
+      "breadcrumb": "Головна > Бакалаврська робота",
+      "author": {
+        "@type": "Person",
+        "name": "Євгеній"
+      }
+    }
+    </script>
+
     </head>
     <body>
         <header>
             <div class="container">
                 <img src="assets/favicon.png" alt="Логотип університету"
                     width="50">
+
+                <nav aria-label="Головне меню">
+                    <ul>
+                        <li><a href="#about">Про проєкт</a></li>
+                        <li><a href="#goals">Мета та завдання</a></li>
+                        <li><a href="#results">Результати</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
         <main>
             <div class="container">
-                <h1>Веборієнтована інформаційна система дистанційного навчання з
-                    інтеграцією особистого кабінету</h1></div>
+                <article id="about">
+                    <header>
+                        <h1>Веборієнтована інформаційна система дистанційного
+                            навчання</h1>
+                        <p class="subtitle">з інтеграцією особистого
+                            кабінету</p>
+                    </header>
+
+                    <section id="goals" aria-labelledby="goals-heading">
+                        <h2 id="goals-heading">Мета та завдання дослідження</h2>
+                        <p>На цьому етапі розробляється архітектура особистого
+                            кабінету користувача...</p>
+                        <h3>Основні етапи:</h3>
+                        <ul>
+                            <li>Аналіз вимог до LMS</li>
+                            <li>Проєктування інтерфейсу</li>
+                        </ul>
+                    </section>
+                </article>
+            </div>
         </main>
 
         <footer>

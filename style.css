@@ -4,15 +4,135 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #003366;
+    --accent-color: #0055aa;
+    --text-dark: #333;
+    --text-light: #fff;
+    --bg-gray: #f4f7f9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: var(--text-dark);
+    background-color: var(--bg-gray);
 }
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+header {
+    background: var(--text-light);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    padding: 60px 0;
+}
+
+article h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-style: medium;
+}
+
+section {
+    background: var(--text-light);
+    padding: 50px 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+footer {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer address {
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #add8e6;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    article h1 {
+        font-size: 1.8rem;
+    }
 }
